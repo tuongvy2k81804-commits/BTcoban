@@ -1,8 +1,8 @@
-/*Cho dãy số gồm n số thực. Sau đó:
+	/*Cho dãy số gồm n số thực. Sau đó:
 
 Tìm số âm đầu tiên trong dãy
 Tìm số dương cuối cùng trong dãy
-Vị trí đầu tiên và vị trí cuối cùng của phần tử x trong dãy.
+Vị trí đầu tiên và vị trí cuối cùng của phần tử x trong dãy.    ( bd = 0 )
 Input
 Dòng đầu chứa số nguyên dương n và x (1 ≤ n ≤ 100)
 Dòng 2 gồm n số thực a1, a2, ..., an.
@@ -17,49 +17,42 @@ using namespace std;
 
 int main () {
 	
-	int n; cin >> n;
+	int n; cin >> n; int x; cin >> x;
 	db a[n];
-	db x; cin >> x;
 	
 	db soamdau, soduongcuoi;
-	int vitridau, vitricuoi;              //vị trí dùng int
+	int vitridau, vitricuoi; 
+	             
+	bool timsoam = 0;
+	bool timsoduong = 0;
+	bool timvtridau = 0;
+	bool timvtricuoi = 0;
 	
 	for (int i = 0; i < n; ++i) {
 		cin >>  a[i];
-	}
-	
-	for (int i = 0; i < n; ++i) { 
-		if ( a[i] < 0) {
+		
+		if (a[i] < 0 && timsoam == 0) {
 			soamdau = a[i];
-			break;
+			timsoam = 1;
+		}
+		if (a[i] == x && timvtridau == 0) {
+			vitridau = i ;
+			timvtridau = 1;
 		}
 	}
-	
-	for (int i = 0; i < n; ++i) {     
-		if (a[i] == x) {
-			vitridau = i;
-			break;
-		}	
-	}
-	
 	
 	for (int i = n - 1; i >= 0; --i) {
 		
-		if (a[i] > 0) {
+		if ( a[i] > 0 && timsoduong == 0) {
 			soduongcuoi = a[i];
-			break;
+			timsoduong = 1;
 		}
-	}
-	
-	for (int i = n - 1; i >= 0; --i) {
-		if (x == a[i]) {
+		if ( a[i] == x && timvtricuoi == 0) {
 			vitricuoi = i;
-			break;
+			timvtricuoi = 1;
 		}
 	}
+	cout << soamdau << " " << soduongcuoi << "\n" << vitridau << " " << vitricuoi;
 	
-	cout << soamdau << " " << soduongcuoi << "\n" << vitridau + 1  << " " << vitricuoi + 1; 
-	// vị trí trong dãy hơn chỉ số 1 đvi
-	
-return 0;
+	return 0;	
 }
