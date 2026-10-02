@@ -59,7 +59,6 @@ int main () {
 	}
 	
 	cout << soamdau << " " << soduongcuoi << "\n" << vitridau  << " " << vitricuoi; 
-	// vị trí trong dãy hơn chỉ số 1 đvi
 	
 return 0;
 }
