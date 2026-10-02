@@ -28,14 +28,14 @@ int main () {
 		cin >>  a[i];
 	}
 	
-	for (int i = 0; i < n; ++i) {
+	for (int i = 0; i < n; ++i) { 
 		if ( a[i] < 0) {
 			soamdau = a[i];
 			break;
 		}
 	}
 	
-	for (int i = 0; i < n; ++i) {
+	for (int i = 0; i < n; ++i) {     
 		if (a[i] == x) {
 			vitridau = i;
 			break;
@@ -58,7 +58,8 @@ int main () {
 		}
 	}
 	
-	cout << soamdau << " " << soduongcuoi << "\n" << vitridau << " " << vitricuoi;
+	cout << soamdau << " " << soduongcuoi << "\n" << vitridau + 1  << " " << vitricuoi + 1; 
+	// vị trí trong dãy hơn chỉ số 1 đvi
 	
 return 0;
 }
