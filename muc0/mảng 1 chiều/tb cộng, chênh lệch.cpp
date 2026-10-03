@@ -30,7 +30,7 @@ int main (){
 	
 	db trungbinhcong = tong / n;
 
-	cout << trungbinhcong << "\n";
+	cout << fixed << setprecision(2) <<trungbinhcong << "\n";
 	
 //chenh lech nho nhat
 	db chenhlech;
@@ -45,7 +45,7 @@ int main (){
 				ketqua = a[i];                      
 		}
 	}
-	cout << ketqua;                  //in ptu có độ chênh lệch nhỏ nhất 
+	cout << fixed << setprecision(2) << ketqua;                  //in ptu có độ chênh lệch nhỏ nhất 
 	
 	return 0;
 }
