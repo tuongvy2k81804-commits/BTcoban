@@ -9,8 +9,7 @@ Output
 Dòng 1: chứa giá trị TBC của dãy số
 Dòng 2: giá trị của phần tử chênh lệch với giá trị trung bình cộng là nhỏ nhất.*/
 
-#include <iostream>
-#include <cmath>            //abs()
+#include <bits/stdc++.h>          //abs()
 #define db double
 
 using namespace std;
