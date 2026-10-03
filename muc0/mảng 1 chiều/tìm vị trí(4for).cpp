@@ -58,7 +58,7 @@ int main () {
 		}
 	}
 	
-	cout << soamdau << " " << soduongcuoi << "\n" << vitridau + 1 << " " << vitricuoi - 1; 
+	cout << soamdau << " " << soduongcuoi << "\n" << vitridau + 1 << " " << vitricuoi + 1; 
 	
 return 0;
 }
