@@ -1,3 +1,6 @@
+/*Có hai người, một người sinh ngày a, tháng b, năm c. Người còn lại sinh ngày x, tháng y, năm z
+Hỏi người nào nhiều tuổi hơn.
+Đảm bảo ngày hợp lệ.*/
 #include <iostream>
 
 using namespace std;
