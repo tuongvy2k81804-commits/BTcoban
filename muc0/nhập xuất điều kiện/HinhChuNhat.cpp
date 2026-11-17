@@ -8,7 +8,7 @@ int main () {
 	
 	if (a == b) cout << c;
 	else if (a == c) cout << b;
-	else cout << a;
+	else if (b == c) cout << a;
 	
 	return 0;
 }
