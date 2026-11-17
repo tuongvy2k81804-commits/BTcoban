@@ -7,10 +7,10 @@ int main () {
 	cin >> a >> b >> c;
 	int max = a, min = a;
 	
-	if (b >= max) b = max;
-	if (c >= max) c = max;
-	if (b <= min) b = min;
-	if (c <= min) c = min;
+	if (b >= max) max = b;
+	if (c >= max) max = c;
+	if (b <= min) min = b;
+	if (c <= min) min = c;
 
 	cout << min << ' ' << max;
 	
