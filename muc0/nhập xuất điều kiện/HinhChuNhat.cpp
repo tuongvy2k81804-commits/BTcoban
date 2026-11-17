@@ -1,3 +1,7 @@
+/*
+Cho độ dài 3 cạnh a,b,c
+ của hình chữ nhật. In ra độ dài cạnh còn lại.
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
